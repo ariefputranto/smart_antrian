@@ -31,6 +31,9 @@ tests/_support/_generated
 
 #vagrant folder
 /.vagrant
+/vagrant
+/tests
+/runtime
 
 #node module
 /node_modules
