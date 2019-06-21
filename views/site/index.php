@@ -7,6 +7,7 @@ $this->title = 'My Yii Application';
 <div class="site-index">
 
     <div class="jumbotron">
+        <?= Yii::$app->urlManager->createAbsoluteUrl(['site/verify-email', 'token' => 'Ni6fgpQkI7XrH8IfrO2qSfggIMNFB_kL_1560940468']) ?>
         <h1>Congratulations!</h1>
 
         <p class="lead">You have successfully created your Yii-powered application.</p>

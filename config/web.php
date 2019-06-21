@@ -59,13 +59,26 @@ $config = [
         'authManager' => [
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\PhpManager'
         ],
+        'assetManager' => [
+            'bundles' => [
+                // change jquery version to fix dropdown
+                'yii\web\JqueryAsset' => [
+                    'sourcePath' => null,
+                    'basePath' => '@webroot',
+                    'baseUrl' => '@web',
+                    'js' => [
+                        'js/jquery.js',
+                    ]
+                ],
+            ],
+        ],
     ],
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
-            '*',
-            // 'site/login',
-            // 'site/signup',
+            // '*',
+            'site/login',
+            'site/signup',
             // 'admin/*',
         ]
     ],
