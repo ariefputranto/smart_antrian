@@ -114,6 +114,7 @@ a.desc:after {
     outline: none;
 }
 
-.ui-autocomplete {
-    position: relative;
+.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content {
+    overflow-y: scroll !important;
+    max-height: 200px !important;
 }
