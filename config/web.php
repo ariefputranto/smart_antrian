@@ -79,6 +79,10 @@ $config = [
             // '*',
             'site/login',
             'site/signup',
+            'site/request-password-reset',
+            'site/reset-password',
+            'site/verify-email',
+            'site/resend-verification-email',
             // 'admin/*',
         ]
     ],
